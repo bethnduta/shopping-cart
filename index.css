@@ -9,4 +9,46 @@
     box-sizing: border-box;
     font-family: "poppins", sans-serif;
     scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+
+}
+
+:root{
+    --main-color:#fd4646;
+    --text-color:#171427;
+    --bg-color:#fff;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    color: var(--text-color);
+}
+
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#cart-icon{
+    font-size: 1.8rem;
+    cursor: pointer;
 }
