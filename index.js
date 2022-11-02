@@ -26,12 +26,20 @@ function ready(){
         var button = removeCartButtons[i];
         button.addEventListener("click", removeCartItem);
     }
+
+// Quantity changes
+var quantityInputs = document.getElementsByClassName('cart-quantity');
+for (var i=0; i<quantityInputs.length; i++){
+    var input = quantityInputs[i];
+    input.addEventListener("change",quantityChanged);bb
+}
 }
 
 // Remove items from cart
 function removeCartItem(event){
     var buttonClicked = event.target;
     buttonClicked.parentElement.remove();
+    updatetotal();
 }
 
 // update total
