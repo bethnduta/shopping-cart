@@ -31,7 +31,7 @@ function ready(){
 var quantityInputs = document.getElementsByClassName('cart-quantity');
 for (var i=0; i<quantityInputs.length; i++){
     var input = quantityInputs[i];
-    input.addEventListener("change",quantityChanged);bb
+    input.addEventListener("change",quantityChanged);
 }
 }
 
@@ -40,6 +40,11 @@ function removeCartItem(event){
     var buttonClicked = event.target;
     buttonClicked.parentElement.remove();
     updatetotal();
+}
+
+// quantity changes
+function quantityChanged(event){
+    
 }
 
 // update total
