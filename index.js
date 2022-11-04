@@ -44,6 +44,7 @@ function removeCartItem(event){
 
 // quantity changes
 function quantityChanged(event){
+    var input = event.target
     
 }
 
