@@ -34,6 +34,11 @@ for (var i=0; i<quantityInputs.length; i++){
     input.addEventListener("change",quantityChanged);
 }
 }
+//Add to cart
+var addCart = document.getElementsByClassName('add-cart')
+for (var i=0; i<addCart.length;i++){
+    
+}
 
 // Remove items from cart
 function removeCartItem(event){
