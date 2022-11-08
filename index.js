@@ -47,6 +47,11 @@ function removeCartItem(event){
     buttonClicked.parentElement.remove();
     updatetotal();
 }
+// Add to cart
+function addCartCLicked(event){
+    var button =event.target
+    var shopProduct
+}
 
 // quantity changes
 function quantityChanged(event){
