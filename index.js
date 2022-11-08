@@ -50,7 +50,8 @@ function removeCartItem(event){
 // Add to cart
 function addCartCLicked(event){
     var button =event.target
-    var shopProduct
+    var shopProducts = button.parentElement
+    var title = shopProducts.getElementsByClassName('')
 }
 
 // quantity changes
