@@ -58,6 +58,10 @@ function addCartCLicked(event){
     updatetotal()
 }
 
+function addProductToCart(title,price, productImg){
+    var cart
+}
+
 // quantity changes
 function quantityChanged(event){
     var input = event.target;
